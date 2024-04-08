@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200&display=swap");
+
+#block .tt_tgb_text b {
+  font-family: "Montserrat";
+}
+
+#block .tt_tgb_text small {
+  font-family: "Montserrat";
+}
+
+#block .tt_tgb_text button {
+  font-family: "Montserrat";
+}
+
+#block .tt_tgb_disclaimer {
+  font-family: "Yanone Kaffeesatz";
+}
+
+#block .tt_tgb_inner:after {
+  content: "ФСЗ 2009/04453 от 26.10.2017 \aПМ-ОТС-2023-05-064 от 15.05.2023";
+  white-space: pre;
+  font-weight: 300;
+  font-size: 10px;
+  position: absolute;
+  left: calc(100% - 80px);
+  top: 50%;
+  transform: rotate(90deg) translateY(-50%);
+  padding: 0;
+  margin: 0;
+  color: lightgray;
+}
+
+hr {
+  margin: 1rem auto;
+}
+
+.container {
+  position: relative;
+  background: url("../img/ellipse.png");
+  background-repeat: no-repeat;
+  background-position: -38%;
+  background-size: 60%;
+}
+.container #block {
+  background: url("../img/girl.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+.tt_ {
+  background-position: -35% -20%;
+}
+.tt_ .tt_tgb_inner::before {
+  width: 60%;
+  background-position: top;
+}
+.tt_ #block {
+  background-size: cover;
+  background-position: 150%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+ul li {
+  position: relative;
+}
+ul li::before {
+  content: url("../img/mark.png");
+  position: absolute;
+  right: calc(100% + 0.5rem);
+  top: 0;
+}
+
+.tt_tgb_inner {
+  width: 50%;
+  margin-left: auto;
+  color: #54c2ef;
+  position: relative;
+}
+.tt_tgb_inner::before {
+  content: " ";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 100%;
+  background: url("../img/prod.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+button {
+  background: transparent;
+  border: 2px solid #54c2ef;
+  border-radius: 10px;
+  color: #54c2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 175px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+  background: #54c2ef;
+}
+
+.tt_tgb_disclaimer {
+  text-align: center;
+  text-transform: uppercase;
+  color: gray;
+  padding: 4px 0;
+}
